@@ -6,7 +6,7 @@ Updates all outdated packages using pip. Also allows specifying packages, or sho
 
 ## Usage
 
->    $ pip_update -h
+>    $ pip_upgrade -h
 >    usage: Provides functionality for updating all your outdated packages
 >
 >    positional arguments:
@@ -19,16 +19,16 @@ Updates all outdated packages using pip. Also allows specifying packages, or sho
 
 ## Authors:
 
- * Ross Binden
  * Alistair Broomhead
+ * Ross Binden
 
 ## Contributors
 
- * Sam Raza
- * Russel Winder
  * Charalampos Papaloizou
- * Shivan Sornarajah
  * Frank Herrmann
+ * Russel Winder
+ * Sam Raza
+ * Shivan Sornarajah
 
 ## Licence
 
