@@ -2,7 +2,8 @@
 
 ## Summary
 
-Updates all outdated packages using pip. Also allows specifying packages, or showing outdated packages.
+Updates all outdated packages using pip. Also allows specifying packages,
+or showing outdated packages.
 
 ## Usage
 
@@ -32,4 +33,4 @@ Updates all outdated packages using pip. Also allows specifying packages, or sho
 
 ## Licence
 
-This code is licence under the [MIT Licence](http://opensource.org/licenses/MIT).
+This code is licence under the [MIT Licence](http://opensource.org/licenses/MIT)

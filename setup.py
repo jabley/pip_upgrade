@@ -1,10 +1,4 @@
-from setuptools import setup, find_packages
-
-setup(
-    name="pip_upgrade",
-    version="0.0.5",
-    description="Provides functionality for updating your outdated packages.",
-    long_description="""
+"""
 # Pip Update
 
 ## Summary
@@ -41,7 +35,23 @@ or showing outdated packages.
 ## Licence
 
 This code is licence under the [MIT Licence](http://opensource.org/licenses/MIT)
-    """,
+"""
+
+from setuptools import setup, find_packages
+from sys import argv
+import os.path
+
+if "build" in argv:
+    DIRNAME = os.path.dirname(__file__)
+    README = os.path.join(DIRNAME, "README.md")
+    open(README, 'w').write(__doc__.strip())
+
+setup(
+    name="pip-upgrade",
+    version="0.0.6",
+    install_requires=['pip >=1.5.1'],
+    description="Provides functionality for updating your outdated packages.",
+    long_description=__doc__,
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
@@ -49,8 +59,8 @@ This code is licence under the [MIT Licence](http://opensource.org/licenses/MIT)
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.4"
     ],
-    url='https://github.com/russel/pip_extras',
-    author='pip_upgrade authors',
+    url='https://github.com/russel/pip_upgrade',
+    author='pip-upgrade authors',
     keywords='pip',
     license='MIT',
     packages=find_packages(),
@@ -58,5 +68,5 @@ This code is licence under the [MIT Licence](http://opensource.org/licenses/MIT)
         "console_scripts": [
             "pip_upgrade=pip_upgrade:main"
         ]
-    }, requires=['pip (>=1.5.1)']
+    }
 )
