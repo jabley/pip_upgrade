@@ -8,7 +8,7 @@ class ListCmd(object):
 
     @property
     def outdated_packages(self):
-        for package_data in self.cmd.find_packages_latests_versions(
+        for package_data in self.cmd.find_packages_latest_versions(
                 self.options):
             dist, remote = package_data[0], package_data[1:]
             if len(remote) == 1:  # Later versions of pip
